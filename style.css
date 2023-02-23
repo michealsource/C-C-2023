@@ -1,0 +1,552 @@
+body {
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+   max-width: 1500px;
+
+}
+.home{
+    height: 100vh;
+}
+
+body .home {
+    background-color: #f2f2f2;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+    background-color: #07476a;
+    color: #fff;
+    font-size: 13px;
+    color: #e37252;
+}
+
+.borgermenu {
+    display: none;
+}
+
+.topmenu {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.topmenu a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.topmenu a:hover {
+    color: #f1896c;
+}
+
+marquee {
+    font-size: 23px;
+}
+
+marquee span {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.navCC {
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+}
+
+.navCC a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    width: 100%;
+}
+
+.fa-face-smile {
+    color: #e37252;
+    padding-left: 10px;
+}
+
+
+.container img {
+    width: 70%;
+    /* height: 80vh; */
+    border-radius: 5px;
+   
+
+}
+
+.container h1 {
+    font-size: 60px;
+    line-height: 0;
+    color: #e37252;
+    font-family: 'Lobster', cursive;
+    font-weight: 300;
+}
+
+.cardtext {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.cardtext h1:nth-child(2) {
+    color: #07476a;
+    font-size: 40px;
+}
+
+.container h2 {
+    font-size: 50px;
+    line-height: 20px;
+    color: #e37252;
+
+}
+
+.container h3 {
+    font-size: 30px;
+    line-height: 20px;
+    color: #07476a;
+
+}
+
+.container:last-child {
+    order: 2;
+}
+
+
+.line {
+    width: 15%;
+    height: 5px;
+    background: #e5e5e5;
+    margin: 0 auto;
+}
+
+#chck {
+    display: none;
+}
+
+
+/*Rsvp*/
+.backroundImg {
+    background-image: url(./photos/debby-hudson-jcc8sxK2Adw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #07476a;
+}
+
+.backroundImg {
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 20%;
+    justify-content: center;
+
+
+}
+
+.backroundImg h1 {
+    font-size: 60px;
+    line-height: 50px;
+}
+
+/*church Venue*/
+body .VenueImage {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(./photos/WhatsApp\ Image\ 2023-02-01\ at\ 11.03.55\ AM.jpeg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-image: url(./photos/WhatsApp\ Image\ 2023-02-01\ at\ 11.03.55\ AM.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    box-sizing: border-box; */
+}
+
+
+.VenueImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.VenueImage h1 {
+    color: whitesmoke;
+    font-size: 50px;
+    line-height: 20px;
+}
+
+/*reception*/
+.reception {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url(./photos/WhatsApp\ Image\ 2023-02-01\ at\ 11.55.58\ AM.jpeg);
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.reception .receptionContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 18px;
+    color: whitesmoke;
+
+}
+
+.reception h2{
+    font-size: 40px;
+}
+
+.reception span {
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.reception span:last-child {
+    font-size: 30px;
+}
+
+
+
+/*photo*/
+
+.galleryContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1200px;
+    margin: 10px auto;
+    gap: 20px;
+}
+
+.box {
+    overflow: hidden;
+
+}
+
+.box img {
+    width: 100%;
+    height: 80vh;
+    border-radius: 5px;
+    transition: all 1.5s ease-in-out;
+}
+
+.box:hover img {
+    scale: 1.5;
+
+    border-radius: 5px;
+
+
+}
+
+
+/* TIMER STYLINGS */
+.countdownContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    /* background-color: red; */
+    margin: 0 auto;
+}
+
+.time {
+    background-color: #07476a;
+    padding: 10px;
+    height: 60px;
+    width: 50px;
+    border-radius: 10px;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+}
+
+.time h2 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.time span {
+    padding-bottom: 20px;
+    color: #e37252;
+}
+
+
+
+@media(max-width:700px) {
+
+   /* TIMER STYLINGS */
+.countdownContainer {
+    width: 80%;
+}
+
+.time {
+    padding: 10px;
+    height: 40px;
+    width: 50px;
+    border-radius: 5px;
+}
+
+#minutes, #hours, #days, #seconds {
+    color: #fff;
+    font-size: 16px;
+}
+
+.time span {
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+
+    .borgermenu {
+        display: block;
+        font-size: 30px;
+        padding-left: 150px;
+
+    }
+
+    .cardtext {
+        order: 2;
+    }
+
+
+    .topmenu {
+        display: block;
+        top: -100%;
+        position: fixed;
+        background-color: #07476a;
+        z-index: 5000;
+        width: 100%;
+        height: auto;
+        padding-left: 0px;
+    }
+
+
+    .topmenu a {
+
+
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        color: #fff;
+
+
+    }
+
+
+    #chck:checked~ul {
+        top: 5vh;
+        transition: all 1s ease-in-out;
+
+    }
+
+    nav {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 7vh;
+        padding: 0 0px;
+    }
+
+
+    marquee {
+        display: none;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        height: 90vh;
+    }
+
+    .container img {
+         width: 90%;
+         height: 50vh; 
+        border-radius: 10px;
+    }
+
+    .container h1 {
+        font-size: 30px;
+        color: #e37252;
+        font-weight: 600;
+        line-height:0 px;
+    }   
+
+    .cardtext h1:nth-child(2) {
+        color: #fff;
+        font-size: 30px;
+        color: #07476a;
+    }
+
+    .container h2 {
+        font-size: 30px;
+        line-height: 15px;
+        color: #e37252;
+
+    }
+
+    .container h3 {
+        font-size: 20px;
+        line-height: 15px;
+        color: #07476a;
+
+    }
+
+    .container:last-child {
+        order: 1;
+    }
+
+    .line {
+        display: none;
+    }
+
+
+
+    /*Rsvp*/
+    body .backroundImg {
+        height: 93vh;
+    }
+
+    .backroundImg {
+        padding: 10px 30px;
+
+    }
+
+    .backroundImg h1 {
+        font-size: 40px;
+        line-height: 30px;
+    }
+
+    /*church Venue*/
+    body .VenueImage {
+        height: 93vh;
+        padding-top: 30px;
+        box-sizing: border-box;
+    }
+
+
+    .VenueImage h1 {
+        font-size: 27px;
+        line-height: 20px;
+    }
+
+    /*reception*/
+    .reception {
+        height: 93vh;
+    }
+
+
+    .reception h2{
+        font-size: 25px;
+        line-height: 40px;
+    }
+    
+    .reception span {
+        font-size: 27px;
+        line-height: 40px;
+        font-weight: bold;
+    }
+    
+    .reception span:last-child {
+        font-size: 23px;
+    }
+    
+
+
+    /*photo*/
+
+    .galleryContainer {
+        grid-template-columns: 1fr;
+        max-width: 90%;
+        height: fit-content;
+    }
+
+    .box img {
+        height: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* @media(min-width:600px){
+            marquee{
+               display: none;
+            }
+
+            .cardtext{
+                order: 2;
+            }
+
+            .container{
+                grid-template-columns: 1fr;
+                height: 90vh;
+           
+            }
+
+            img{
+                width:70%;
+                height: 50vh;
+                border-radius:5px;
+                
+            }
+
+            .gallery{
+                grid-template-columns:1fr 1fr;
+                width: 100%;
+                height: 100%;
+            }
+            
+        }   */
